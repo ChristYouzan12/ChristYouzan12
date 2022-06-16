@@ -2,7 +2,7 @@ import React from "react";
 import { GrLocation } from "react-icons/gr";
 import { useState } from "react";
 export default function Journey(props) {
-  const [currenntItem, SetItem] = useState(false);
+  const [currentItem, SetItem] = useState(false);
   const open = () => {
     SetItem(true);
   };
