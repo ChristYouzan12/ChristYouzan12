@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+}
+
+.btn--container {
+  display: grid;
+  width: 360px;
+}
+
+.content--tabs {
+  display: grid;
+  border: 1px solid;
+  width: 360px;
+}
