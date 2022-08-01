@@ -1,22 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-// import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-// import Tabs from "./tabs";
-
-// import Product from "./product--card";
-import Timer from "./countDownTimer";
-import ProductDisplay from "./productDisplay";
+// import Template from "./components/Template-card/Template";
+// import Apps from "./components/webpage/Apps";
+import Main from "./components/webPage2/Main-component";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-    {/* <Tabs /> */}
-    {/* <Product /> */}
-    <Timer />
-    {/* <ProductDisplay /> */}
+    {/* <Apps /> */}
+    <Main />
   </React.StrictMode>
 );
 
