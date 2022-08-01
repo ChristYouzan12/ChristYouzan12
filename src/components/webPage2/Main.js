@@ -1,8 +1,43 @@
 import React from "react";
 import "./Mains.css";
-import Article from "./Main Article Image.png";
-import User from "./User Avatar.png";
-const Main = (prop) => {
+import Article from "../images/Main Article Image.png";
+import User from "../images/User Avatar.png";
+import Card from "./Card";
+import data from "./data";
+const Main = () => {
+  const list = data.map((item) => {
+    return (
+      <>
+        <Card
+          key={item.user1.title}
+          title={item.user1.title}
+          summary={item.user1.summary}
+          name={item.user1.name}
+          job_title={item.user1.job_title}
+          article={item.user1.article}
+          user={item.user1.img}
+        />
+        <Card
+          key={item.user2.title}
+          title={item.user2.title}
+          summary={item.user2.summary}
+          name={item.user2.name}
+          job_title={item.user2.job_title}
+          article={item.user3.article}
+          img={item.user2.img}
+        />
+        <Card
+          key={item.user3.title}
+          title={item.user3.title}
+          summary={item.user3.summary}
+          name={item.user3.name}
+          job_title={item.user3.job_title}
+          article={item.user3.article}
+          img={item.user3.img}
+        />
+      </>
+    );
+  });
   return (
     <div className="wrapper">
       <div className="items-one">
