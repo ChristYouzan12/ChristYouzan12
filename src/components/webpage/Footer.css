@@ -1,0 +1,10 @@
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 89px 0;
+}
+
+.img-container {
+  padding: 25px 0;
+}

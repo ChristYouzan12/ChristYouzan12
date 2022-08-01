@@ -1,0 +1,22 @@
+/* .burger-container {
+  top: 61px;
+  right: 59px;
+  position: fixed;
+  height: 18px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+} */
+
+/* @media screen and (max-width: 786px) {
+  .burger {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    width: 2rem;
+    height: 0.2rem;
+    background-color: black;
+    padding: 3px;
+    border-radius: 10px;
+    /* margin-bottom: 2px; */
+/* border: none; */
