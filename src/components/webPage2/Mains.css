@@ -19,9 +19,13 @@
 .mini {
   display: flex;
 }
-
+.img-container{
+  width: 40%;
+  margin-right: 45px;
+}
 .img-container>img {
   height: 155px;
+  width: 100%;
   margin-right: 50px;
 }
 
@@ -32,8 +36,8 @@
 
 .title {
   font-size: 30px;
-  width: 610px;
   font-weight: 400;
+  width: 100%;
 }
 
 .profile>img {
@@ -85,4 +89,30 @@
     padding: 0 200px;
   }
   
+}
+
+
+@media screen and (max-width:1062px) {
+  .mini{
+display: flex;
+flex-direction: column;
+  }
+
+  .img-container {
+    width: 100%;
+  }
+  .img-container > img {
+    height: 260px;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10rem;
+  }
+
+  .title-container {
+    align-items: center;
+  }
+
+  .title {
+    text-align: center;
+  }
 }
