@@ -3,7 +3,6 @@
   justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   padding: 0 168px;
-  column-gap: 170px;
 }
 
 .items-one {
@@ -42,7 +41,7 @@
 }
 
 .title-content {
-  max-width: 430px;
+  width: 60%;
   font-weight: 200;
   font-size: 13px;
   line-height: 20px;
@@ -64,4 +63,17 @@
   flex-direction: column;
   margin: 62px 0;
   height: 100%;
+}
+
+@media  screen and (min-width:1064px) {
+  .items > img{
+    width: 80%;
+  }
+  
+  .wrapper {
+    padding: 0 422px;
+  }
+  .img-container>img {
+    height: 300px;
+  }
 }

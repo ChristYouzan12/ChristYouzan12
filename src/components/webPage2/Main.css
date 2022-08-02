@@ -12,5 +12,10 @@ body {
 }
 
 .containers {
-  flex-wrap: column nowrap;
+  flex-flow: column nowrap;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
 }
+
