@@ -79,3 +79,10 @@
 }
 
 
+@media screen and (max-width: 1159px) {
+  
+  .wrapper{
+    padding: 0 200px;
+  }
+  
+}

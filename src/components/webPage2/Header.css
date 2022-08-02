@@ -37,11 +37,5 @@ ul > li > a {
     width: 100vw;
     padding: 42px 422px;
   }
-  
-}
 
-@media screen and (max-width:1032px){
-  .mini-container {
-    display: none;
-  }
 }
