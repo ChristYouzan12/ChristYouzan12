@@ -13,4 +13,22 @@ body {
 
 .containers {
   flex-wrap: column nowrap;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  padding: 0 422px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content>p {
+  font-size: 12px;
+}
+
+.footer-content>img {
+  width: fit-content;
 }
