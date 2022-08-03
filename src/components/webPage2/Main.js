@@ -2,7 +2,7 @@ import React from "react";
 import "./Mains.css";
 import Article from "./Main Article Image.png";
 import User from "./User Avatar.png";
-import Card from "./Card"
+import Card from "./Card";
 import data from "./data";
 const Main = () => {
   const list = data.map((item) => {
@@ -15,25 +15,25 @@ const Main = () => {
           article={item.user1.article}
           user={item.user1.user}
           name={item.user1.name}
-          job_title = {item.user1.job_title}
+          job_title={item.user1.job_title}
         />
-         <Card
-         key={item.user2.title}
-         title={item.user2.title}
-         summary={item.user2.summary}
-         article={item.user2.article}
-         user={item.user2.user}
-         name={item.user2.name}
-         job_title = {item.user2.job_title}
+        <Card
+          key={item.user2.title}
+          title={item.user2.title}
+          summary={item.user2.summary}
+          article={item.user2.article}
+          user={item.user2.user}
+          name={item.user2.name}
+          job_title={item.user2.job_title}
         />
-         <Card
-           key={item.user3.title}
-           title={item.user3.title}
-           summary={item.user3.summary}
-           article={item.user3.article}
-           user={item.user3.user}
-           name={item.user3.name}
-           job_title = {item.user3.job_title}
+        <Card
+          key={item.user3.title}
+          title={item.user3.title}
+          summary={item.user3.summary}
+          article={item.user3.article}
+          user={item.user3.user}
+          name={item.user3.name}
+          job_title={item.user3.job_title}
         />
       </>
     );
@@ -64,10 +64,8 @@ const Main = () => {
             </div>
           </div>
         </div>
-      
       </div>
-
-      {list}
+      <div className="main-container">{list}</div>
     </div>
   );
 };
