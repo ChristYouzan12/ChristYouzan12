@@ -5,11 +5,11 @@
   font-family: "Inter", sans-serif;
 }
 
-/* html,
 body,
 #root {
-  height: 100vh;
-} */
+  height: 100%;
+  overflow: auto;
+}
 
 .containers {
   flex-flow: column nowrap;
@@ -17,12 +17,12 @@ body,
   flex-direction: column;
   justify-content: space-evenly;
   height: 100%;
-  padding: 0 422px;
+  padding: 0 20%;
 }
 
 @media screen and (max-width:1062px) {
   .containers {
-    padding: 0 99px;
+    padding: 0 53px;
   }
 
 }

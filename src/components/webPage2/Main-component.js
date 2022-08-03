@@ -10,6 +10,12 @@ const Main_components = () => {
   display:flex;
   justify-content: space-between;
   margin-top: 50px;
+
+  @media screen and (max-width:1062px){
+{Style} > p {
+    font-size:12px;
+    font-weight: 100;
+  }
   `;
 
   const Parent = Styled.div`
@@ -17,6 +23,8 @@ const Main_components = () => {
   justify-content:space-evenly;
   flex-direction:column;
   height:90%
+
+}
   `;
   return (
     <div className="containers">
