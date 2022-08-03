@@ -2,6 +2,7 @@ import React from "react";
 import { Header } from "./Header";
 import "./Main.css";
 import Main from "./Main";
+import Logo from "./Logo.svg";
 import data from "./data";
 const Main_components = () => {
   const list = data.map((item) => {
@@ -35,6 +36,10 @@ const Main_components = () => {
     <div className="containers">
       <Header />
       {list}
+      <footer className="footer-content">
+        <img src={Logo} alt="logo"></img>
+        <p>Unifeed © 2017 All Copyrights Not Reserved</p>
+      </footer>
     </div>
   );
 };

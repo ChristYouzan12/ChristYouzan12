@@ -4,7 +4,7 @@ import Article from "../images/Main Article Image.png";
 import User from "../images/User Avatar.png";
 import Card from "./Card";
 import data from "./data";
-const Main = () => {
+const Main = (prop) => {
   const list = data.map((item) => {
     return (
       <>

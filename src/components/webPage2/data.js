@@ -14,8 +14,8 @@ const data = [
     user2: {
       title: "How To Start Your Own Business",
       summary: "Starting your own business in 2021 has never been easier.",
-      article: "./Article #2 Image.png",
-      img: "./User Avatar-2.png",
+      article: "../images/Article #2 Image.png",
+      img: "../images/User Avatar-2.png",
       name: "Sara Frey",
       job_title: "Business Leader",
     },
@@ -23,8 +23,8 @@ const data = [
       title: "5 Tips for Better Branding",
       summary:
         "From SEO to integrating with Paid Advertising, this article covers it all.",
-      article: "./Article #3 Image.png",
-      img: "./User Avatar-3.png",
+      article: "../images/Article #3 Image.png",
+      img: "../images/User Avatar-3.png",
       name: "David Suns",
       job_title: "Brand Manager",
     },
