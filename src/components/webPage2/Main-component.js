@@ -10,12 +10,22 @@ const Main_components = () => {
   display:flex;
   justify-content: space-between;
   margin-top: 50px;
+  -webkit-align-items:center;
 
+  {Style} > p {font-size: 15px;
+    font-weight: 200;}
   @media screen and (max-width:1062px){
 {Style} > p {
     font-size:12px;
     font-weight: 100;
   }
+ @media screen and (max-width:767px){
+  {Style} {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   `;
 
   const Parent = Styled.div`

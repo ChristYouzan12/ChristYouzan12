@@ -12,6 +12,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-direction: column;
+  height: 200px;
 }
 
 .mini {
@@ -24,7 +25,7 @@
 }
 
 .img-container>img {
-  height: 155px;
+  height: 188px;
   width: 100%;
   /* margin-right: 50px; */
 }
@@ -45,7 +46,6 @@
 }
 
 .title-content {
-  width: 60%;
   font-weight: 200;
   font-size: 13px;
   line-height: 20px;
@@ -73,18 +73,19 @@
   display: flex;
 }
 
-@media screen and (min-width:1064px) {
-  /* .items>img {
-    width: 80%;
-}  */
+.items>h2 {
+  width: 201px;
+  font-weight: 400;
+}
 
-  /* .wrapper {
-    padding: 0 422px;
-  } */
+.items>p {
+  font-size: 15px;
+  font-weight: 100;
+}
 
-  .img-container>img {
-    height: 165px;
-  }
+
+.profile-card>p {
+  font-size: 12px;
 }
 
 
