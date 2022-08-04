@@ -6,12 +6,11 @@ import Logo from "./Logo.svg";
 import Styled from "styled-components";
 const Main_components = () => {
   const Style = Styled.footer`
-
   display:flex;
   justify-content: space-between;
   margin-top: 50px;
   -webkit-align-items:center;
-
+  
   {Style} > p {font-size: 15px;
     font-weight: 200;}
   @media screen and (max-width:1062px){
@@ -24,6 +23,7 @@ const Main_components = () => {
     display:flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 57px;
   }
 
   `;
@@ -32,8 +32,7 @@ const Main_components = () => {
   display:flex;
   justify-content:space-evenly;
   flex-direction:column;
-  height:90%
-
+  height:90%;
 }
   `;
   return (
