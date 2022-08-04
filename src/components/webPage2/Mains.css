@@ -69,27 +69,19 @@
   height: 100%;
 }
 
-@media  screen and (min-width:1064px) {
+@media  screen and (max-width:1064px) {
   .items > img{
     width: 80%;
   }
   
   .wrapper {
-    padding: 0 422px;
+    padding: auto;
   }
   .img-container>img {
     height: 300px;
   }
 }
 
-
-@media screen and (max-width: 1159px) {
-  
-  .wrapper{
-    padding: 0 200px;
-  }
-  
-}
 
 
 @media screen and (max-width:1062px) {

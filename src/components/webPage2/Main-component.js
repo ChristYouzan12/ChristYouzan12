@@ -12,6 +12,10 @@ const Main_components = () => {
   justify-content: space-between;
   padding: 0 422px;
   margin-top: 50px;
+
+  @media screen and (max-width: 1062px){
+    padding: 0 174px;
+  }
   `;
 
   const Parent = Styled.div`
