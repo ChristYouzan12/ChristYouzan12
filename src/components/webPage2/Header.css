@@ -35,6 +35,14 @@ ul>li>a {
 border: none;
 }
 
+.btn-wrapper > img {
+  width: 24px;
+  height: 20px;
+  /* position has to relative for Z-index to work  */
+  position: relative;
+  z-index: 99999;
+}
+
 @media screen and (max-width:1062px) {
   .container {
     /* width: 100vw; */

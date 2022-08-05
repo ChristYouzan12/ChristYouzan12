@@ -37,17 +37,7 @@
   font-weight: 600;
 }
 
-/* ul > li:hover + .drop-down {
-  background: white;
-  width: 319px;
-  border-radius: 17px;
-  font-size: 10px;
-  padding: 18px;
-  line-height: 15px;
-  position: relative;
-  top: 139px;
-  left: -542px;
-} */
+
 .pop-up {
   background: #fff;
   border-radius: 5px;
