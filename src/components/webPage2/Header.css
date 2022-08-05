@@ -31,7 +31,9 @@ ul>li>a {
   font-weight: 200;
   font-size: 12px;
 }
-
+.btn-wrapper {
+border: none;
+}
 
 @media screen and (max-width:1062px) {
   .container {

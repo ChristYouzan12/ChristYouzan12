@@ -9,10 +9,6 @@ const Main_components = () => {
   display:flex;
   justify-content: space-between;
   margin-top: 50px;
-
-  @media screen and (max-width: 1062px){
-    padding: 0 174px;
-  }
   -webkit-align-items:center;
 
   {Style} > p {

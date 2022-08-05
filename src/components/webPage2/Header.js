@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./Header.css";
 import logo from "./Logo.svg";
 import Menu from "./HamburgerMenu.svg";
+import { RightNav } from "./RightNav";
+
 export const Header = () => {
+
+  const [open, setOpen] = useState(false);
+  const click = () => {
+ setOpen(!open);
+  }
   const media = 767;
   const [isMobile, setMobile] = useState(null);
 
@@ -41,7 +48,10 @@ export const Header = () => {
           <button id="btn">Subscribe</button>
         </div>
       ) : (
-        <img src={Menu} alt="Hamburger" className="hamburger"></img>
+        <div className="hamburger">
+ <button className="btn-wrapper" onClick={click}><img src={Menu} alt="Hamburger" className="hamburger"></img></button>
+<RightNav open={open} />
+        </div>
       )}
     </nav>
   );
