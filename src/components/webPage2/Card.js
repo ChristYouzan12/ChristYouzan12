@@ -10,7 +10,7 @@ const Card = (prop) => {
         <div className="profile">
           <img src={prop.user} alt="template" width="40px"></img>
 
-          <div>
+          <div className="profile-card">
             <h4>{prop.name}</h4>
             <p>{prop.job_title}</p>
           </div>

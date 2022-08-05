@@ -5,17 +5,24 @@
   font-family: "Inter", sans-serif;
 }
 
-html,
-#root,
-body {
+body,
+#root {
   height: 100%;
+  overflow: auto;
 }
 
 .containers {
   flex-flow: column nowrap;
   display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: 0 20%;
 }
 
+@media screen and (max-width:1062px) {
+  .containers {
+    padding: 0 53px;
+  }
+
+}
