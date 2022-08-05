@@ -67,6 +67,7 @@
   flex-direction: column;
   margin: 29px 0;
   height: 338px;
+  width: 100%;
 }
 
 @media  screen and (max-width:1064px) {
