@@ -5,11 +5,14 @@ import Menu from "./HamburgerMenu.svg";
 import { RightNav } from "./RightNav";
 
 export const Header = () => {
+  const clicks = () => {
+    alert("thank you for click susbcribe");
+  };
 
   const [open, setOpen] = useState(false);
   const click = () => {
- setOpen(!open);
-  }
+    setOpen(!open);
+  };
   const media = 767;
   const [isMobile, setMobile] = useState(null);
 
@@ -45,12 +48,16 @@ export const Header = () => {
               </a>
             </li>
           </ul>
-          <button id="btn">Subscribe</button>
+          <button id="btn" onClick={clicks}>
+            Subscribe
+          </button>
         </div>
       ) : (
         <div className="hamburger">
- <button className="btn-wrapper" onClick={click}><img src={Menu} alt="Hamburger" className="hamburger"></img></button>
-<RightNav open={open} />
+          <button className="btn-wrapper" onClick={click}>
+            <img src={Menu} alt="Hamburger" className="hamburger"></img>
+          </button>
+          <RightNav open={open} />
         </div>
       )}
     </nav>
