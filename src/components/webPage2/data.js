@@ -1,9 +1,7 @@
 import Articles1 from "../images/ArticleImage.png";
 import Articles2 from "../images/ArticleImage2.png";
 import Articles3 from "../images/ArticleImage3.png";
-import User1 from "../images/UserAvatar-1.png";
 import User2 from "../images/UserAvatar-2.png";
-import User3 from "../images/ArticleImage3.png";
 const data = [
   {
     user1: {

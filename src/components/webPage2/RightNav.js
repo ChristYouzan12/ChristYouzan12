@@ -2,11 +2,15 @@ import React from "react";
 import Styled from "styled-components";
 
 export const RightNav = ({ open }) => {
+  const click = () => {
+    alert("thank you for click susbcribe");
+  };
   const styling = {
     position: "absolute",
     top: "224px",
     right: "34px",
   };
+
   const Div = Styled.div`
     display: ${({ open }) => (open ? "block" : "none")};
     background: #fff;
@@ -57,7 +61,7 @@ color: #fff;
           </a>
         </li>
       </Ul>
-      <button style={styling} id="btn">
+      <button style={styling} id="btn" onClick={click}>
         Subscribe
       </button>
     </Div>
