@@ -1,10 +1,10 @@
 import React from "react";
 import "./Mains.css";
-import Article from "../images/Main Article Image.png";
-import User from "../images/User Avatar.png";
+import Article from "../images/MainArticle.png";
+import User from "../images/UserAvatar-1.png";
 import Card from "./Card";
 import data from "./data";
-const Main = (prop) => {
+const Main = () => {
   const list = data.map((item) => {
     return (
       <>
@@ -15,7 +15,7 @@ const Main = (prop) => {
           name={item.user1.name}
           job_title={item.user1.job_title}
           article={item.user1.article}
-          user={item.user1.img}
+          img={item.user1.img}
         />
         <Card
           key={item.user2.title}
@@ -23,7 +23,7 @@ const Main = (prop) => {
           summary={item.user2.summary}
           name={item.user2.name}
           job_title={item.user2.job_title}
-          article={item.user3.article}
+          article={item.user2.article}
           img={item.user2.img}
         />
         <Card
@@ -65,45 +65,7 @@ const Main = (prop) => {
           </div>
         </div>
       </div>
-      <div className="items">
-        <img src={prop.article} alt="banner" width="210px"></img>
-        <h2>{prop.title}</h2>
-        <p>{prop.summary}</p>
-        <div className="profile">
-          <img src={prop.user} alt="template" width="40px"></img>
-
-          <div>
-            <h4>Spencer David</h4>
-            <p>SEO Specialist</p>
-          </div>
-        </div>
-      </div>
-      <div className="items">
-        <img src={prop.article} alt="banner" width="210px"></img>
-        <h2>{prop.title}</h2>
-        <p>{prop.summary}</p>
-        <div className="profile">
-          <img src={prop.user} alt="template" width="40px"></img>
-
-          <div>
-            <h4>Sara Frey</h4>
-            <p>Business Leader</p>
-          </div>
-        </div>
-      </div>
-      <div className="items">
-        <img src={prop.article} alt="banner" width="210px"></img>
-        <h2>{prop.title}</h2>
-        <p>{prop.summary}</p>
-        <div className="profile">
-          <img src={prop.user} alt="template" width="40px"></img>
-
-          <div>
-            <h4>David Suns</h4>
-            <p>Brand Manager</p>
-          </div>
-        </div>
-      </div>
+      <div className="main-container">{list}</div>
     </div>
   );
 };

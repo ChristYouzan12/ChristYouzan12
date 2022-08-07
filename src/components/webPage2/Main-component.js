@@ -3,43 +3,50 @@ import { Header } from "./Header";
 import "./Main.css";
 import Main from "./Main";
 import Logo from "./Logo.svg";
-import data from "./data";
+import Styled from "styled-components";
 const Main_components = () => {
-  const list = data.map((item) => {
-    return (
-      <>
-        <Main
-          key={item.user1.title}
-          title={item.user1.title}
-          summary={item.user1.summary}
-          article={item.user1.article}
-          user={item.user1.user}
-        />
-        <Main
-          key={item.user2.title}
-          title={item.user2.title}
-          summary={item.user2.summary}
-          article={item.user2.article}
-          user={item.user2.user}
-        />
-        <Main
-          key={item.user3.title}
-          title={item.user3.title}
-          summary={item.user3.summary}
-          article={item.user3.article}
-          user={item.user3.user}
-        />
-      </>
-    );
-  });
+  const Style = Styled.footer`
+  display:flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  -webkit-align-items:center;
+
+  {Style} > p {
+    font-size: 15px;
+    font-weight: 200;
+  }
+  @media screen and (max-width:1062px){
+{Style} > p {
+    font-size:12px;
+    font-weight: 100;
+  }
+ @media screen and (max-width:767px){
+  {Style} {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 57px;
+  }
+
+  `;
+
+  const Parent = Styled.div`
+  display:flex;
+  justify-content:space-evenly;
+  flex-direction:column;
+  height:90%;
+}
+ `;
   return (
     <div className="containers">
       <Header />
-      {list}
-      <footer className="footer-content">
-        <img src={Logo} alt="logo"></img>
-        <p>Unifeed © 2017 All Copyrights Not Reserved</p>
-      </footer>
+      <Parent>
+        <Main />
+        <Style>
+          <img src={Logo} alt="logo"></img>
+          <p> Unifeed © 2017 All Copyrights Not Reserved</p>
+        </Style>
+      </Parent>
     </div>
   );
 };

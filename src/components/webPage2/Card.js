@@ -7,7 +7,7 @@ const Card = (prop) => {
       <h2>{prop.title}</h2>
       <p>{prop.summary}</p>
       <div className="profile">
-        <img src={prop.user} alt="template" width="40px"></img>
+        <img src={prop.img} alt="template" width="40px"></img>
         <div className="profile-card">
           <h4>{prop.name}</h4>
           <p>{prop.job_title}</p>

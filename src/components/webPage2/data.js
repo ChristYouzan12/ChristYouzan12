@@ -1,21 +1,25 @@
-import user from "../images/Article #3 Image.png";
-
+import Articles1 from "../images/ArticleImage.png";
+import Articles2 from "../images/ArticleImage2.png";
+import Articles3 from "../images/ArticleImage3.png";
+import User1 from "../images/UserAvatar-1.png";
+import User2 from "../images/UserAvatar-2.png";
+import User3 from "../images/ArticleImage3.png";
 const data = [
   {
     user1: {
       title: "7 Tips for Organic Traffic",
       summary:
         "From SEO to integrating with Paid Advertising, this article covers it all.",
-      article: "../images/Article 1 Image.png",
-      img: { user },
+      article: Articles2,
+      img: User2,
       name: "Spencer David",
       job_title: "SEO Specialist",
     },
     user2: {
       title: "How To Start Your Own Business",
       summary: "Starting your own business in 2021 has never been easier.",
-      article: "../images/Article #2 Image.png",
-      img: "../images/User Avatar-2.png",
+      article: Articles1,
+      img: User2,
       name: "Sara Frey",
       job_title: "Business Leader",
     },
@@ -23,12 +27,11 @@ const data = [
       title: "5 Tips for Better Branding",
       summary:
         "From SEO to integrating with Paid Advertising, this article covers it all.",
-      article: "../images/Article #3 Image.png",
-      img: "../images/User Avatar-3.png",
+      article: Articles3,
+      img: User2,
       name: "David Suns",
       job_title: "Brand Manager",
     },
   },
 ];
-
 export default data;
