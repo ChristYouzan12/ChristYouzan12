@@ -12,13 +12,18 @@ export default function Journey(props) {
   };
   return (
     <div className="container">
-      <div className="content--container">
+      {/* template literals */}
+      <div
+        className={` ${
+          currentItem ? "item-selected " : ""
+        }   content-container`}
+        onClick={open}
+      >
         <div className="place--img">
           <img
             className="img--btn"
             src={props.imageUrl}
             alt="places--images"
-            onClick={open}
           ></img>
         </div>
         <div className="location">
