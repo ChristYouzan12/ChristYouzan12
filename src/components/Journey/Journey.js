@@ -4,11 +4,7 @@ import { useState } from "react";
 export default function Journey(props) {
   const [currentItem, SetItem] = useState(false);
   const open = () => {
-    SetItem(true);
-  };
-
-  const close = () => {
-    SetItem(false);
+    SetItem(!currentItem);
   };
   return (
     <div className="container">

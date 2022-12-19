@@ -2,7 +2,7 @@ import "./App.css";
 import data from "./data";
 import Journey from "./Journey";
 import NavBar from "./navBar";
-
+import Explore from "./pages/Explore";
 function App() {
   const list = data.map((item) => {
     return (
@@ -22,6 +22,7 @@ function App() {
     <section>
       <NavBar />
       {list}
+      <Explore />
     </section>
   );
 }
