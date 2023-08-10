@@ -22,7 +22,7 @@ export default function Journey(props) {
         <div className="location">
           <div className="mini-content">
             <h6 className="location--content">
-              {<GrLocation />}
+              {/* {<GrLocation />} */}
               {props.location}
             </h6>
             <a className="map--content" href={props.googleMapsUrl}>
