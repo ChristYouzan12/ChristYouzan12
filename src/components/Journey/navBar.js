@@ -1,5 +1,4 @@
 import React from "react";
-import { GrMapLocation } from "react-icons/gr";
 import styled from "styled-components";
 import Links from "./Links";
 import { Outlet } from "react-router-dom";
