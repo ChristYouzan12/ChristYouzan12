@@ -14,5 +14,6 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           working-directory: src/QA
-          build: npm run build
-          start: npm run start
+          run: |
+            npm ci
+            npm run build

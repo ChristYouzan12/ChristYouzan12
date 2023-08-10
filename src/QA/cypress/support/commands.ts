@@ -1,5 +1,4 @@
 /// <reference types="cypress" />
-// import Chainable = Cypress.Chainable;
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -36,29 +35,3 @@
 //     }
 //   }
 // }
-
-export {};
-
-import cypress = require("cypress");
-import "./commands";
-
-declare global {
-  namespace Cypress {
-    interface Chainable {
-      /**
-       * Custom command to select DOM element by data-cy attribute.
-       * @example cy.dataCy('greeting')
-       */
-      dataCy(value: string): Chainable<void>;
-      logins(value: string): Chainable<void>;
-    }
-  }
-}
-// cypress/support/index.ts
-Cypress.Commands.add("dataCy", (value) => {
-  return cy.get(`[data-cy=${value}]`);
-});
-
-Cypress.Commands.add("logins", (value) => {
-  cy.visit(value);
-});

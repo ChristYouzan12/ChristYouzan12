@@ -14,45 +14,7 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import "./commands";
-require("cypress-plugin-api");
-import { Person, loginPage } from "./loginSelector";
-export {};
+import './commands'
 
-// cypress/support/index.ts
-declare global {
-  namespace Cypress {
-    interface Chainable {
-      /**
-       * Custom command to select DOM element by data-cy attribute.
-       * @example cy.dataCy('greeting')
-       */
-      dataCy(value: string): Chainable<JQuery<HTMLElement>>;
-      bookDemo(person: Person): Chainable<void>;
-      newLetterSubmit(email: string): Chainable<void>;
-    }
-  }
-}
-
-// cypress/support/index.ts
-Cypress.Commands.add("dataCy", (value) => {
-  return cy.get(`[data-cy=${value}]`);
-});
-
-Cypress.Commands.add("bookDemo", (person: Person) => {
-  cy.fixture("example").then((data) => {
-    cy.get(person.userName).type(data.name);
-    cy.get(person.userEmail).type(data.email);
-    cy.get(person.userCompany).type(data.company);
-    cy.get(person.userPhoneNumber).type(data.phoneNumber);
-    cy.get(person.numberOfEmployees).type(data.numberOfEmployees);
-    cy.get(person.messageEl).type(data.hear);
-    cy.get(person.tellUs).type(data.messageEl);
-    cy.get(person.checkBox).click();
-  });
-});
-
-Cypress.Commands.add("newLetterSubmit", (email: string) => {
-  cy.get("#Footer-Email-23").type(email);
-  cy.get(".button-primary-large").click();
-});
+// Alternatively you can use CommonJS syntax:
+// require('./commands')

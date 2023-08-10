@@ -83,3 +83,102 @@ $ npm run cypress:run -- --env grep='edge case'
 
 // npm test
 // npm run test-watch
+
+// let registerCypressGrep = require("@cypress/grep");
+// registerCypressGrep();
+/// <reference types="cypress" />
+
+import loginFunction from "../integration/dist";
+// import personalDetails from "../integration/dist/personDetail";
+import { loginPage } from "../support/loginSelector";
+
+// const personDetails: personalDetails = new personalDetails();
+const login: loginFunction = new loginFunction();
+enum emailData {
+real = "yanisarnold15@gmail.com",
+fake = "yanisarnold15@tester",
+empty = "hello",
+}
+
+const success = ".success-message-3 > div";
+
+// // different test case to show that the input fields are working as expected
+describe("Testing different input fields with different values works", function () {
+beforeEach(function () {
+cy.visit(Cypress.env("PROD"));
+});
+it("@TC001: Verify user are able to enter their email successfully inside the newsletter input field ", () => {
+cy.newLetterSubmit(emailData.real);
+cy.get(success).should("be.visible");
+cy.log(login.getName("christ"));
+});
+it("@TC002: Verify invalid email are rejected and congratulations message should not show ", () => {
+cy.newLetterSubmit(emailData.fake);
+cy.get(success).should("not.be.visible");
+});
+it("@T003: Verify submit button is disabled when entering an invalid email", () => {
+cy.newLetterSubmit(emailData.empty);
+// verifying that the congratulations message is not displaying
+cy.get(success).should("not.be.visible");
+});
+});
+
+// Testing book a DEMO
+describe("verifying a users can book demo's", function () {
+it("verify a booking can be made successfully", function () {
+// login.visitMainUrl("prod");
+cy.visit(Cypress.env("BOOK"));
+login.bookingDemo(loginPage);
+});
+});
+
+const { defineConfig } = require("cypress");
+require("dotenv").config();
+// const watch = require("@cypress/watch-preprocessor");
+const bookingArg = "booking";
+const bookDemo = "book-a-demo";
+
+module.exports = defineConfig({
+projectId: "cpig8p",
+// 2484ft
+
+numTestsKeptInMemory: 20,
+screenshotOnRunFailure: true,
+screenshotsFolder: "cypress/screenshots",
+videosFolder: "cypress/videos",
+defaultCommandTimeout: 6000,
+execTimeout: 10000,
+pageLoadTimeout: 60000,
+requestTimeout: 20000,
+responseTimeout: 20000,
+watchForFileChanges: true,
+retries: {
+runMode: 1,
+openMode: 1,
+},
+e2e: {
+chromeWebSecurity: false,
+baseUrl: "http://localhost:3000",
+setupNodeEvents(on, config) {
+on("file:preprocessor", (file) => {});
+// using baseUrl with config env
+// const appUrl = config.env.type || "local";
+// const allUrl = {
+// local: "https://www.myndup.com/",
+// prod: "https://www.myndup.com/",
+// };
+
+      //   config.baseUrl = allUrl[appUrl];
+
+      //   return config;
+    },
+
+    // using cypress .env file
+    // env: {
+    //   ...process.env,
+    // },
+    specPattern: "cypress/e2e/**{_spec.ts,Tests.ts}",
+    supportFile: false,
+
+},
+});

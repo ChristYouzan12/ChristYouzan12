@@ -1,10 +1,5 @@
 {
-  "name": "christ",
-  "email": "yanisarnold15@gmail.com",
-  "company": "myndUp",
-  "phoneNumber": "07412729433",
-  "numberOfEmployees": 5,
-  "hear": "Google",
-  "messageEl": "I'm looking to taking testing to the next level",
-  "privacy": true
+  "name": "Using fixtures to represent data",
+  "email": "hello@cypress.io",
+  "body": "Fixtures are a great way to mock data for responses to routes"
 }
