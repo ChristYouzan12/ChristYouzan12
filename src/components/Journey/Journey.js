@@ -1,5 +1,4 @@
 import React from "react";
-import { GrLocation } from "react-icons/gr";
 import { useState } from "react";
 export default function Journey(props) {
   const [currentItem, SetItem] = useState(false);
@@ -13,14 +12,12 @@ export default function Journey(props) {
         className={` ${
           currentItem ? "item-selected " : ""
         }   content-container`}
-        onClick={open}
-      >
+        onClick={open}>
         <div className="place--img">
           <img
             className="img--btn"
             src={props.imageUrl}
-            alt="places--images"
-          ></img>
+            alt="places--images"></img>
         </div>
         <div className="location">
           <div className="mini-content">
