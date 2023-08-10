@@ -15,4 +15,4 @@ jobs:
         with:
           working-directory: src/QA
           build: npm run build
-          start: npm start
+          start: npm run start
