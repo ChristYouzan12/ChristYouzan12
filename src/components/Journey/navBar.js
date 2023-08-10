@@ -10,9 +10,7 @@ export default function NavBar() {
   return (
     <div>
       <div className="banner--container">
-        <div>
-          <GrMapLocation className="icon--banner" />
-        </div>
+        <div>{/* <GrMapLocation className="icon--banner" /> */}</div>
         <h2>travel Journey</h2>
       </div>
       <Div>
