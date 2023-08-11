@@ -20,12 +20,8 @@ jobs:
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
-<<<<<<< HEAD
-          node-version: ${{ matrix.node-version }}
+          node-version: 16
           config-file: cypress.config.js
-=======
-          config-file: cypress.config.ts
->>>>>>> main
           working-directory: src/QA
           run: |
             npm ci
