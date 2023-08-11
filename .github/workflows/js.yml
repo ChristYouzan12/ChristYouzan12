@@ -12,7 +12,9 @@ jobs:
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v2
+
         with:
+          config-file: cypress.config.js
           working-directory: src/QA
           run: |
             npm ci
